@@ -1,0 +1,193 @@
+<!--メインのファイル-->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>VRの世界</title>
+</head>
+
+    <link rel="stylesheet" type="text/css" href="VR.css">
+    <link rel="stylesheet" type="text/css" href="slick.css">
+
+        <style>
+            body{
+                margin:0;
+            }
+        </style>
+
+<body>
+    <div class="menu">
+        <a href="./what.html">VRとは</a>
+        <a href="./content.html">CONTENT</a>
+        <a href="./pickup.html">PICK UP</a>
+        <a href="./contact.html">コンタクト</a>
+    </div>
+    <!--メニューのとこ画像は後でスライドショーにする-->
+    <div class="midasi">
+    <img src=".\img\usj-monster-hunter-2022-2-a.png">
+    </div>
+
+        <style>
+        .midasi{
+            display:flex;
+            flex-direction:column;
+        }
+        </style>
+<!--中身のやつ-->
+<main>
+
+    <!--VRとは-->
+    <div class="flexitem Item1">
+    <h1>VRの世界</h1>
+        <p>～VRの世界の魅力を一緒に見ていこう～</p>
+
+
+        <style>
+            .setumei{
+                display:flex;
+                justify-content:space-around;
+                align-items: center;
+            }
+
+            .flex{
+                width:40%;
+                text-align:center;
+                align-items: center;
+            }
+        </style>
+
+    <h1>VRとは</h1>
+    <div class="setumei">
+        <div class="flex 1">
+            <figure class="img"><img src=".\img\haikei.jpg"></figure>
+        </div>
+        <div class="flex 2">
+            <h2>VRとは一体なんなのか？</h2>
+            <p>専用の機材を利用することにより仮想空間を本来の現実空間では出来ないような事象をリアリティをもって体験することが出来るコンテンツである。
+                左の画像のような空間に入り込むイメージである。</p>
+            <p>正式名称はVartial Reality。</p>
+        </div>
+    </div>
+
+
+        <!--コンテンツ-->
+    <h1>CONTENTS</h1>
+    <div class="slider">
+        <div class="image"><img src="img/Beat.jpg" alt=""></div>
+        <div class="image"><img src="img/VRChat.jpg" alt=""></div>
+        <div class="image"><img src="img/among.jpg" alt=""></div>
+        <div class="image"><img src="img/PHASMO.jpg" alt=""></div>
+    </div>
+
+    <style>
+
+        .slider .image{
+            display:flex;
+            flex-direction:column;
+            width:100%;
+        }
+    </style>
+
+    <!--PickUP-->
+    <h1>Pick UP</h1>
+        <div class="flex-container">
+            <div class="flex-item">
+                <div class="image-wrap">
+                    <img src="img/VRChat.jpg">
+                    <p>VRChat</p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="image-wrap">
+                    <img src="img/among.jpg">
+                    <p>Among Us</p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="image-wrap">
+                    <img src="img/PHASMO.jpg">
+                    <p>PHASMOPHOBIA</p>
+                </div>
+            </div>
+
+        </div>
+
+            <style>
+                .flex-container {
+                    display: flex;
+                    justify-content:space-around;
+                    text-align: center;
+                }
+                
+                .image-wrap{
+                    margin: 10px 5px;
+                }
+                
+                .image-wrap img {
+                    height: 400px;
+                }
+
+                .flex-item {
+                    flex-basis: 100%;
+                }
+
+            </style>
+            <div class="flex-item">
+                <div class="image-wrap">
+                    <video src="img/underkids.mp4" controls></video>
+                    <p>リズムゲーム</p>
+                </div>
+            </div>
+            
+    <!--Contact-->
+    <div class="flexitem Item4">
+
+        <h2>VRで出来ること一覧</h2>
+        <p>リズムゲーム</li>
+        <li>動画視聴</li>
+        <li>VRChat</li>
+        <li>ピックアップ</li>
+    </div>
+</main>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="slick.min.js"></script>
+    
+        <script>
+            $(function () {
+            $('.slider').slick({
+                autoplay:true,
+                autoplaySpeed:0,
+                speed:5000,
+                arrows:false,
+                swipe:false,
+                slidesToShow:3,
+                cssEase:'linear',
+                pauseOnFocus:false,
+                pauseOnHover:false,
+            });
+        });
+        </script>
+    
+
+</body>
+
+<footer>© 2023/08/23</footer>
+
+        <style>
+
+            footer {clear:left;
+                width:100%;
+                height:40px;
+                background-color:rgb(0, 255, 255);
+                color:purple;
+                text-align:center;
+                line-height:40px;
+                font-size:18px;
+                padding-top:10p;
+                }
+            
+        </style>
+
+</html>

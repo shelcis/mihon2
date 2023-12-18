@@ -1,0 +1,47 @@
+body {
+    margin:0;
+    padding:0;
+}
+
+
+
+.menu{
+display:flex;
+background-color:rgb(0, 255, 255);
+}
+
+.menu a{    
+    width:22%;
+    margin-bottom:10px;
+    list-style:none;
+    height:40px;
+    width: 150px;
+    text-align:center;
+    background-color:rgb(0, 255, 255);
+    color:purple;
+    margin-top:20px;
+}
+
+.flexitem{
+    display: flex;
+    flex-flow: column;
+    bottom:128px;
+}
+
+main{
+    text-align: center;
+}
+
+.abc .image{
+    width: 100%; /*画像サイズ指定*/
+    list-style: none;
+}
+
+.setumei .img {
+    width: 100%; /*画像サイズ指定*/
+    height:100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
